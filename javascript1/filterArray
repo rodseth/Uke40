@@ -1,0 +1,11 @@
+let names = ["Hassan", "Jens", "Salli", "Oskar", "Frida", "Mari", "Nikolaj", "Jonas", "Tone", "Kristin"];
+
+function filterByValue(array, string) {
+    return array.filter(o =>
+        Object.keys(o).some(k => o[k].toLowerCase().includes(string.toLowerCase())));
+}
+
+console.log(filterByValue(names, 'a'));
+
+
+let reversed = names.map(function reverse(item)
